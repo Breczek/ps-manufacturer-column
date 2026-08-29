@@ -11,6 +11,8 @@ Hooks into the core Product Grid (Catalog → Products) without touching any the
 - Extends the grid's underlying query with a `LEFT JOIN` to `manufacturer`, so products without a
   manufacturer still appear in the list.
 
+![Manufacturer column in the Catalog → Products grid](ps-manufacturer-column.png)
+
 ## How it works
 
 Three services, wired through `config/admin/services.yml`, hook into the Grid component
@@ -30,7 +32,7 @@ PrestaShop has used for the product list since 1.7.6 — unchanged across PS 8 a
 
 ## Installation
 
-1. Copy `manufacturers/` to `modules/manufacturers/` in your PrestaShop installation.
+1. Copy `psmanufacturercolumn/` to `modules/psmanufacturercolumn/` in your PrestaShop installation.
 2. Install it from Back Office → Modules, or via CLI.
 3. Open Catalog → Products — the Manufacturer column appears after Name.
 
@@ -50,6 +52,24 @@ connection (SQLite, in-memory) rather than a hand-rolled stub.
 The test suite was written with [Claude](https://claude.com/claude-code) (Anthropic), which also
 reviewed the codebase for bugs and typos.
 
+## Contributing
+
+Corrections and additions welcome — PrestaShop keeps moving. Open an issue or PR with the version
+you observed.
+
 ## License
 
 MIT — see `LICENSE`.
+
+## Author
+
+**Marcin Bręczewski** ([@Breczek](https://github.com/Breczek)) — WordPress & PrestaShop developer.
+[breczek-koduje.pl](https://breczek-koduje.pl) · [kontakt@breczek-koduje.pl](mailto:kontakt@breczek-koduje.pl)
+
+## Support
+
+If this saved you time:
+
+- ⭐ Star the repo — it helps others find it
+- ☕ [Buy me a coffee](https://buycoffee.to/breczek-koduje.pl) to fuel the next one
+- 🌐 More at [breczek-koduje.pl](https://breczek-koduje.pl) · follow [@Breczek](https://github.com/Breczek) on GitHub

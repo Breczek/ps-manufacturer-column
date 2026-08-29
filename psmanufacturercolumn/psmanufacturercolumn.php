@@ -1,9 +1,9 @@
 <?php 
 /**
- * Manufactures
- * 
- * PrestaShop 9 module using modern Hooks and services 
- * 
+ * PS Manufacturer Column
+ *
+ * PrestaShop 9 module using modern Hooks and services
+ *
  */
 if (!defined('_PS_VERSION_')) {
     exit;
@@ -15,11 +15,11 @@ if (file_exists($moduleVendorAutoload)) {
 use Breczek\Manufacturers\Grid\ProductManufacturerGridDefinitionModifier;
 use Breczek\Manufacturers\Grid\ProductManufacturerGridQueryModifier;
 
-class Manufacturers extends Module 
+class Psmanufacturercolumn extends Module
 {
     public function __construct()
     {
-        $this->name = 'manufacturers';
+        $this->name = 'psmanufacturercolumn';
         $this->tab = 'administration';
         $this->version = '1.0.0';
         $this->author = 'Marcin Bręczewski';
@@ -35,7 +35,7 @@ class Manufacturers extends Module
         $this->displayName = $this->l('Manufacturers on product list');
         $this->description = $this->l('The module adds a column with manufacturers in the product catalog in BO');
 
-        $this->confirmUninstall = $this->l('Are you sure you want to uninstall manufacturers module?');
+        $this->confirmUninstall = $this->l('Are you sure you want to uninstall the PS Manufacturer Column module?');
 
     }
         public function install()

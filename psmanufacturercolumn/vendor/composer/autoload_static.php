@@ -22,7 +22,7 @@ class ComposerStaticInit10ab52ea895807c3037019331b747517
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'Manufacturers' => __DIR__ . '/../..' . '/manufacturers.php',
+        'Psmanufacturercolumn' => __DIR__ . '/../..' . '/psmanufacturercolumn.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

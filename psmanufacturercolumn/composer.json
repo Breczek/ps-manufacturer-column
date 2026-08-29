@@ -1,5 +1,5 @@
 {
-  "name": "breczek/manufacturers",
+  "name": "breczek/psmanufacturercolumn",
   "description": "",
   "authors": [
     {
@@ -15,7 +15,7 @@
       "Breczek\\Manufacturers\\": "src/"
     },
     "classmap": [
-      "manufacturers.php"
+      "psmanufacturercolumn.php"
     ],
     "exclude-from-classmap": []
   },
